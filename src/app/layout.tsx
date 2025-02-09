@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
-      <body className={`${dmSans.className} antialiased bg-[#EAEEFE]`}>
+      <body className={`${dmSans.className} antialiased bg-[#0f172a]`}>
         <div>
           <Header />
           <main>{children}</main>

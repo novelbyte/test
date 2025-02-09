@@ -2,11 +2,11 @@
 
 export const Footer = () => {
   return (
-    <footer className=" text-white pb-12">
+    <footer className=" text-white pb-12 bg-[#0f172a]">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-lg font-semibold xl:text-2xl 2xl:text-2xl text-zinc-600">Skontaktuj się z nami</h2> {/* Darkened the text */}
+        <h2 className="text-lg font-semibold xl:text-2xl 2xl:text-2xl text-yellow-600">Skontaktuj się z nami</h2> {/* Darkened the text */}
         <div className="mt-4 space-y-2">
-          <p className="text-sm text-zinc-500"> {/* Darkened the text */}
+          <p className="text-sm text-white-500"> {/* Darkened the text */}
             📞{" "}
             <a
               href="tel:+48572478289"
@@ -15,7 +15,7 @@ export const Footer = () => {
               +48 572 478 289
             </a>
           </p>
-          <p className="text-sm text-zinc-500"> {/* Darkened the text */}
+          <p className="text-sm text-white-500"> {/* Darkened the text */}
             📧{" "}
             <a
               href="mailto:novelbyte@gmail.com"
