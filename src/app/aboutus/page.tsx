@@ -2,7 +2,7 @@
 
 export default function AboutUs() {
   return (
-    <section className="pt-8 pl-8 pb-20 bg-[radial-gradient(ellipse_50%_50%_at_center,#656e92,#EAEEFE_100%)] overflow-x-clip">
+    <section className="pt-8 pl-8 pb-20 bg-[radial-gradient(ellipse_50%_50%_at_top_center,#cfd2e4,#EAEEFE_100%)] overflow-x-clip">
       <div className="max-w-[908px] xl:pl-[100px] 2xl:pl-[210px]">
         <h1 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold tracking-tighter bg-gradient-to-b from-[#22242b] to-[#5e678b] text-transparent bg-clip-text mt-6">
           Czym się zajmujemy?
