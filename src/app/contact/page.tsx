@@ -1,32 +1,38 @@
-'use client'
+'use client';
 
 import React from "react";
 
-export default function ContactPage()  {
+export default function ContactPage() {
   const [result, setResult] = React.useState("");
 
   const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 
-  const onSubmit = async (event) => {
+  // ✅ Added TypeScript annotation to `event`
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult("Wysyłanie...");
-    const formData = new FormData(event.target);
+    
+    const formData = new FormData(event.currentTarget); // ✅ Using `currentTarget`
+    formData.append("access_key", apiKey as string); // Ensure apiKey is treated as string
 
-    formData.append("access_key", apiKey); 
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+      const data = await response.json();
 
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Formularz wysłany pomyślnie");
-      event.target.reset();
-    } else {
-      console.log("Błąd", data);
-      setResult(data.message);
+      if (data.success) {
+        setResult("Formularz wysłany pomyślnie");
+        event.currentTarget.reset();
+      } else {
+        console.error("Błąd", data);
+        setResult(data.message);
+      }
+    } catch (error) {
+      console.error("Wystąpił błąd:", error);
+      setResult("Wystąpił błąd podczas wysyłania formularza.");
     }
   };
 
@@ -73,7 +79,7 @@ export default function ContactPage()  {
               <textarea
                 name="message"
                 id="message"
-                rows="6"
+                rows={6}
                 className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-gray-800"
                 placeholder="Jak możemy Ci pomóc?"
                 required
@@ -95,5 +101,4 @@ export default function ContactPage()  {
       </div>
     </section>
   );
-};
-
+}
