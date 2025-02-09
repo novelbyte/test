@@ -2,7 +2,7 @@
 
 export default function AboutUs() {
   return (
-    <section className="pt-8 pl-8 pb-20  bg-[radial-gradient(ellipse_50%_50%_at_center,#656e92,#EAEEFE_100%)] overflow-x-clip">
+    <section className="pt-8 pl-8 pb-20  bg-[radial-gradient(ellipse_50%_50%_at_center,#121936,#EAEEFE_100%)] overflow-x-clip">
 
       <div className="text-2xl flex justify-center xl:text-3xl 2xl:text-4xl font-bold tracking-tight bg-gradient-to-b from-black to-[#472a5a] text-transparent bg-clip-text md:text-3xl pt-32">
           Nasze Wartości
