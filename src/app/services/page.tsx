@@ -1,6 +1,6 @@
 'use client'
 
-export const Services = () => {
+export default function Services() {
     return (
         <section className="flex justify-center p-8 bg-[radial-gradient(ellipse_100%_50%_at_center_left,#656e92,#EAEEFE_100%)]">
             <div className="max-w-3xl text-center">
@@ -21,4 +21,3 @@ export const Services = () => {
     );
 };
 
-export default Services;

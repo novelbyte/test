@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const ContactPage = () => {
+export default function ContactPage()  {
   const [result, setResult] = React.useState("");
 
   const apiKey = process.env.NEXT_PUBLIC_API_KEY;
@@ -97,4 +97,3 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
