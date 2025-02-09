@@ -4,8 +4,8 @@ export default function Services() {
     return (
         <section className="flex justify-center p-8 bg-[radial-gradient(ellipse_100%_50%_at_center_left,#656e92,#EAEEFE_100%)]">
             <div className="max-w-3xl text-center">
-                <h2 className="text-3xl font-bold mb-4 text-black">Nasze Usługi</h2>
-                <p className="text-lg text-gray-700">
+                <h2 className="text-3xl font-bold mb-4 xl:text-4xl 2xl:text-5xl text-black">Nasze Usługi</h2>
+                <p className="text-lg text-gray-700 xl:text-2xl 2xl:text-2xl">
                     Tworzymy inteligentne chatboty, które zwiększają sprzedaż, poprawiają interakcje z klientami i oszczędzają Twój czas. 
                     Nasze rozwiązania są łatwe w obsłudze, szybkie w implementacji i pomagają Twojej firmie działać efektywniej.
                 </p>

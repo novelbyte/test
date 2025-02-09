@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer className=" text-white pb-12">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-lg font-semibold text-zinc-600">Skontaktuj się z nami</h2> {/* Darkened the text */}
+        <h2 className="text-lg font-semibold xl:text-2xl 2xl:text-2xl text-zinc-600">Skontaktuj się z nami</h2> {/* Darkened the text */}
         <div className="mt-4 space-y-2">
           <p className="text-sm text-zinc-500"> {/* Darkened the text */}
             📞{" "}

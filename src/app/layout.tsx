@@ -9,8 +9,8 @@ import "./globals.css";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Light Saas Landing Page",
-  description: "Template created by Frontend Tribe",
+  title: "NOVELBYTE AI",
+  description: "NOVELBYTE AI",
 };
 
 export default function RootLayout({

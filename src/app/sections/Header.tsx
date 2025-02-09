@@ -27,32 +27,33 @@ export const Header = () => {
   return (
     <header className="sticky top-0 backdrop-blur-lg z-20 shadow-md">
       {/* Top Notification Bar */}
-      <div className="flex justify-center items-center text-xs bg-black text-white py-2">
-        <p className="text-white/60 hidden md:block">
+      <div className="flex justify-center items-center text-[8px] md:text-[15px] bg-black text-white py-2">
+        <p className="text-white/60 md:block">
           Innowacyjne rozwiązania AI i chatboty dla rozwijających się firm
         </p>
       </div>
-
       {/* Main Navigation */}
       <div className="py-5">
         <div className="container max-w-screen mx-auto px-6 md:px-12 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" passHref>
-            <span className="text-black/80 text-xl font-bold pl-4 hover:scale-110 transition-transform cursor-pointer">
+            <span className="text-black/80 text-xl xl:text-2xl 2xl:text-2xl font-bold pl-4 transform hover:text-gray-400 transition duration-150 cursor-pointer">
               NOVELBYTE AI
             </span>
           </Link>
 
+
+
           {/* Desktop Menu */}
-          <nav className="hidden md:flex gap-6 text-black/60 items-center text-xs">
+          <nav className="hidden md:flex gap-6 text-black/60 items-center text-xs xl:text-lg 2xl:text-lg">
             <Link href="/aboutus" passHref>
-              <span className="hover:text-gray cursor-pointer">O nas</span>
+              <span className="hover:text-gray-400 cursor-pointer">O nas</span>
             </Link>
             <Link href="/services" passHref>
-              <span className="hover:text-gray cursor-pointer">Usługi</span>
+              <span className="hover:text-gray-400 cursor-pointer">Usługi</span>
             </Link>
             <Link href="/contact" passHref>
-              <span className="hover:text-gray cursor-pointer">Kontakt</span>
+              <span className="hover:text-gray-400 cursor-pointer">Kontakt</span>
             </Link>
 
             {/* Social Media Links */}
@@ -60,7 +61,7 @@ export const Header = () => {
               href="https://x.com/novelbyteAI"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xl hover:text-gray-600 transition"
+              className="text-xl hover:text-gray-400 transition"
             >
               <FaTwitter />
             </a>
@@ -68,14 +69,14 @@ export const Header = () => {
               href="https://www.instagram.com/novelbyte.ai/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xl hover:text-gray-600 transition"
+              className="text-xl hover:text-gray-400 transition"
             >
               <FaInstagram />
             </a>
 
             {/* Call-to-Action Button */}
             <Link href="/services" passHref>
-              <span className="text-xs bg-black text-white p-2 rounded-lg font-mono shadow-lg transition-all duration-300 hover:bg-gray-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer">
+              <span className="text-xs xl:text-lg 2xl:text-lg bg-black text-white p-2 rounded-lg font-mono shadow-lg transition-all duration-300 hover:bg-gray-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer">
                 Dowiedz się więcej
               </span>
             </Link>
