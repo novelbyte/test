@@ -1,4 +1,4 @@
-export const AboutUs = () => {
+export default function AboutUs() {
     return (
       <section className="pt-8 pl-8 pb-20 bg-[radial-gradient(ellipse_50%_50%_at_center,#656e92,#EAEEFE_100%)] overflow-x-clip">
         
@@ -75,4 +75,3 @@ export const AboutUs = () => {
     )
   }
   
-  export default AboutUs
