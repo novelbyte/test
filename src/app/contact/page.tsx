@@ -13,18 +13,22 @@ export default function ContactPage() {
     
     const formData = new FormData(event.currentTarget);
     formData.append("access_key", apiKey as string);
-
+  
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: formData,
       });
-
+  
       const data = await response.json();
-
+  
       if (data.success) {
         setResult("Formularz wysłany pomyślnie");
-        event.currentTarget.reset();
+  
+        // Add a null check before calling reset()
+        if (event.currentTarget) {
+          event.currentTarget.reset();
+        }
       } else {
         console.error("Błąd", data);
         setResult(data.message);
@@ -34,6 +38,7 @@ export default function ContactPage() {
       setResult("Wystąpił błąd podczas wysyłania formularza.");
     }
   };
+  
 
   return (
     <section className="bg-[#0f172a] py-20">
