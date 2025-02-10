@@ -15,7 +15,7 @@ export default function AboutUs() {
         Nasze Wartości
       </div>
       <ul className="mt-14 divide-y divide-gray-700 h-[500px] xl:px-[200px] 2xl:px-[300px]">
-        {[
+        {[  
           {
             id: "01",
             title: "Innowacja i Kreatywność",
@@ -55,6 +55,26 @@ export default function AboutUs() {
           </li>
         ))}
       </ul>
+      <div className="mt-32 max-w-[908px] xl:pl-[100px] 2xl:pl-[210px]">
+        <h2 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold tracking-tighter text-white">
+          Tworzymy chatboty, które sprzedają, pomagają i budują relacje
+        </h2>
+        <p className="mt-6 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
+          W NovelByte AI wierzymy, że chatbot to coś więcej niż narzędzie do automatyzacji – to sposób na stworzenie prawdziwej, ludzkiej relacji między Twoją marką a klientami.
+        </p>
+        <p className="mt-4 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
+          Nasi inteligentni asystenci AI sprawiają, że zakupy online stają się czymś więcej niż tylko klikaniem i szukaniem produktów. Każdy klient otrzymuje spersonalizowane doświadczenie, które buduje zaufanie, lojalność i zamienia zwykłych odwiedzających w prawdziwych ambasadorów Twojej marki.
+        </p>
+        <p className="mt-4 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
+          Tak, nasze chatboty redukują liczbę zapytań do obsługi klienta nawet o <span className="text-yellow-400 font-bold">80%</span>, przyspieszając i ułatwiając cały proces. Ale dla nas to coś więcej – to <span className="text-yellow-400 font-bold">tworzenie realnej więzi z każdym klientem</span>, dawanie mu poczucia, że jest wysłuchany i doceniony.
+        </p>
+        <p className="mt-6 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
+          Jeśli chcesz, aby Twoja firma działała szybciej, sprzedawała więcej i jednocześnie budowała trwałe relacje z klientami, jesteś we właściwym miejscu.
+        </p>
+        <p className="mt-6 text-sm md:text-lg xl:text-lg 2xl:text-xl text-yellow-400 font-bold tracking-tight">
+          🚀 Sprawdź, jak możemy pomóc Twojej marce!
+        </p>
+      </div>
     </section>
   );
 }
