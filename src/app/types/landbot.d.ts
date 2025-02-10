@@ -1,9 +1,11 @@
-// src/types/landbot.d.ts
+interface LandbotInstance {
+  Livechat: new (config: { configUrl: string }) => any; // or use a more specific type for Livechat
+}
+
 declare global {
-    interface Window {
-      Landbot: unknown; // You can replace `any` with more specific types if available
-    }
+  interface Window {
+    Landbot: LandbotInstance;
   }
-  
-  export {};
-  
+}
+
+export {};

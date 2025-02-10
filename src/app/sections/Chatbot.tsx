@@ -14,9 +14,12 @@ export default function Chatbot () {
 
             // Wait until the script is fully loaded and initialize the Landbot Livechat
             script.addEventListener('load', () => {
-                new window.Landbot.Livechat({
-                    configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2780530-A8YNLNFGPY9Z15MP/index.json',
-                });
+                if (window.Landbot && typeof window.Landbot.Livechat === 'function') {
+                    // Use type assertion to cast `window.Landbot` to the correct type
+                    new (window.Landbot as LandbotInstance).Livechat({
+                        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2780530-A8YNLNFGPY9Z15MP/index.json',
+                    });
+                }
             });
 
             // Append the script to the body to start loading
