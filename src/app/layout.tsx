@@ -20,6 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
+      <head>
+        {/* Favicon link */}
+        <link rel="icon" href="/favicon-32x32.ico" type="image/x-icon" />
+        {/* Add other links if you use different image formats */}
+        <link rel="icon" href="/favicon-32x32.png" type="image/png" />
+      </head>
       <body className={`${dmSans.className} antialiased bg-[#0f172a]`}>
         <div>
           <Header />

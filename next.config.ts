@@ -2,14 +2,26 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   webpack(config, { isServer }) {
-    // Add support for TypeScript .d.ts files if it's missing
+    // Custom webpack config (e.g., handling .d.ts files)
     config.module.rules.push({
       test: /\.d\.ts$/,
-      use: 'raw-loader',  // Allows .d.ts files to be treated as raw content
+      type: 'asset/source',
     });
 
     return config;
   },
+  // Add environment variables
+  env: {
+    NEXT_PUBLIC_OPENAI_API_KEY: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
+  },
+  
+  // Correct way to enable Turbopack
+  experimental: {
+    turbo: {
+      enabled: true,  // Correct way to enable Turbopack
+    },
+  },
+  reactStrictMode: true,
 };
 
 export default nextConfig;
