@@ -16,6 +16,17 @@ export default function WhyChatbots() {
           </div>
         ))}
       </div>
+      <div className="max-w-[908px] pl-8 xl:pl-[100px] 2xl:pl-[210px] mt-[200px] mb-12">
+        <h1 className="mt-6 text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold tracking-tighter text-white">
+          Dlaczego Chatboty Są Przyszłością?
+        </h1>
+        <p className="mt-6 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
+          Chatboty to nie tylko przyszłość – to rewolucja w komunikacji z klientami. Wykorzystując sztuczną inteligencję, możemy zapewnić natychmiastową, personalizowaną obsługę, która nie tylko oszczędza czas, ale także buduje głębokie więzi z użytkownikami. Działają 24/7, nigdy się nie męczą, a ich zdolność do rozwiązywania problemów w czasie rzeczywistym sprawia, że stają się niezastąpionym narzędziem w każdej firmie.
+        </p>
+        <p className="mt-4 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
+          Dzięki naszym chatbotom, które rozwijają się z każdą rozmową, firmy mogą stawić czoła wyzwaniom przyszłości – skutecznej obsłudze klienta, zwiększaniu sprzedaży i automatyzacji procesów. To inwestycja, która zapewnia długoterminowy rozwój i przewagę konkurencyjną.
+        </p>
+      </div>
     </section>
   );
 }

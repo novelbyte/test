@@ -1,19 +1,30 @@
-"use client";
+'use client';
 
 export default function AboutUs() {
   return (
     <section className="pt-8 pl-8 pb-20 bg-[#0f172a] overflow-x-clip">
-      <div className="max-w-[908px] xl:pl-[100px] 2xl:pl-[210px] mt-32 mb-12">
-        <h1 className="mt-6 text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold tracking-tighter text-white">
-          Czym się zajmujemy?
-        </h1>
+      <div className="mt-32 max-w-[908px] xl:pl-[100px] 2xl:pl-[210px]">
+        <h2 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold tracking-tighter text-white">
+          Tworzymy chatboty, które sprzedają, pomagają i budują relacje
+        </h2>
         <p className="mt-6 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
-          W NOVELBYTE AI specjalizujemy się w tworzeniu zaawansowanych chatbotów opartych na sztucznej inteligencji, które rewolucjonizują sposób komunikacji firm z klientami. Nasze rozwiązania automatyzują obsługę klienta, wsparcie sprzedaży i procesy wewnętrzne, zapewniając płynne i naturalne rozmowy. Tworzymy chatboty dopasowane do Twoich potrzeb – inteligentne, skalowalne i gotowe na rozwój Twojego biznesu.
+          W NovelByte AI wierzymy, że chatbot to coś więcej niż narzędzie do automatyzacji – to sposób na stworzenie prawdziwej, ludzkiej relacji między Twoją marką a klientami.
+        </p>
+        <p className="mt-4 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
+          Nasze inteligentne chatboty oferują personalizowane doświadczenie, które buduje zaufanie, lojalność i zamienia odwiedzających w ambasadorów Twojej marki.
+        </p>
+        <p className="mt-4 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
+          Jeśli chcesz, aby Twoja firma działała szybciej, sprzedawała więcej i budowała trwałe relacje, jesteś we właściwym miejscu.
+        </p>
+        <p className="mt-6 text-sm md:text-lg xl:text-lg 2xl:text-xl text-yellow-400 font-bold tracking-tight">
+          🚀 Sprawdź, jak możemy pomóc Twojej marce!
         </p>
       </div>
+
       <div className="pt-32 flex justify-center text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold tracking-tighter text-white">
         Nasze Wartości
       </div>
+
       <ul className="mt-14 divide-y divide-gray-700 h-[500px] xl:px-[200px] 2xl:px-[300px]">
         {[  
           {
@@ -55,24 +66,16 @@ export default function AboutUs() {
           </li>
         ))}
       </ul>
-      <div className="mt-32 max-w-[908px] xl:pl-[100px] 2xl:pl-[210px]">
-        <h2 className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold tracking-tighter text-white">
-          Tworzymy chatboty, które sprzedają, pomagają i budują relacje
-        </h2>
+
+      <div className="max-w-[908px] xl:pl-[100px] 2xl:pl-[210px] mb-12">
+        <h1 className="mt-6 text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold tracking-tighter text-white">
+          Nasza Misja
+        </h1>
         <p className="mt-6 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
-          W NovelByte AI wierzymy, że chatbot to coś więcej niż narzędzie do automatyzacji – to sposób na stworzenie prawdziwej, ludzkiej relacji między Twoją marką a klientami.
+          W NovelByte AI wierzymy, że sztuczna inteligencja ma moc zmieniania biznesów na lepsze. Naszą misją jest tworzenie chatbotów, które nie tylko automatyzują procesy, ale także budują autentyczne relacje z klientami. Każdy nasz projekt jest tworzony z myślą o rozwoju Twojej firmy, oszczędności czasu i dostosowaniu do Twoich unikalnych potrzeb.
         </p>
         <p className="mt-4 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
-          Nasi inteligentni asystenci AI sprawiają, że zakupy online stają się czymś więcej niż tylko klikaniem i szukaniem produktów. Każdy klient otrzymuje spersonalizowane doświadczenie, które buduje zaufanie, lojalność i zamienia zwykłych odwiedzających w prawdziwych ambasadorów Twojej marki.
-        </p>
-        <p className="mt-4 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
-          Tak, nasze chatboty redukują liczbę zapytań do obsługi klienta nawet o <span className="text-yellow-400 font-bold">80%</span>, przyspieszając i ułatwiając cały proces. Ale dla nas to coś więcej – to <span className="text-yellow-400 font-bold">tworzenie realnej więzi z każdym klientem</span>, dawanie mu poczucia, że jest wysłuchany i doceniony.
-        </p>
-        <p className="mt-6 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
-          Jeśli chcesz, aby Twoja firma działała szybciej, sprzedawała więcej i jednocześnie budowała trwałe relacje z klientami, jesteś we właściwym miejscu.
-        </p>
-        <p className="mt-6 text-sm md:text-lg xl:text-lg 2xl:text-xl text-yellow-400 font-bold tracking-tight">
-          🚀 Sprawdź, jak możemy pomóc Twojej marce!
+          Nasza misja to sprawienie, by chatboty stały się naturalną częścią każdego biznesu. Automatyzujemy zadania, pomagamy sprzedawać i wspieramy klientów, dostosowując każdą rozmowę do specyfiki danej firmy i jej wartości. Dodatkowo nasze rozwiązania pozwalają zredukować liczbę zapytań do obsługi klienta nawet o <span className="text-yellow-400 font-bold">90%</span>, co przyspiesza cały proces i zwiększa efektywność.
         </p>
       </div>
     </section>
