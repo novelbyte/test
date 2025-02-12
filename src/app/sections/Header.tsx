@@ -41,13 +41,13 @@ export const Header = () => {
           </Link>
           {/* Desktop Menu */}
           <nav className="hidden md:flex gap-6 items-center text-xs xl:text-lg 2xl:text-lg">
-            <Link href="/aboutus" passHref>
+            <Link href="/ofirmie" passHref>
               <span className="hover:text-white text-white/80 cursor-pointer">O nas</span>
             </Link>
-            <Link href="/services" passHref>
+            <Link href="/uslugi" passHref>
               <span className="hover:text-white text-white/80 cursor-pointer">Usługi</span>
             </Link>
-            <Link href="/contact" passHref>
+            <Link href="/kontakt" passHref>
               <span className="hover:text-white text-white/80 cursor-pointer">Kontakt</span>
             </Link>
             {/* Social Media Links */}
@@ -68,7 +68,7 @@ export const Header = () => {
               <FaInstagram />
             </a>
             {/* Call-to-Action Button */}
-            <Link href="/services" passHref>
+            <Link href="/uslugi" passHref>
               <span className="text-xs xl:text-lg 2xl:text-lg bg-black text-white p-2 rounded-lg font-mono shadow-lg transition-all duration-300 hover:bg-gray-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer">
                 Dowiedz się więcej
               </span>
@@ -101,17 +101,17 @@ export const Header = () => {
           </button>
         </div>
         <nav className="flex flex-col gap-6 items-center text-lg text-white/80">
-          <Link href="/aboutus" passHref>
+          <Link href="/ofirmie" passHref>
             <span className="hover:text-white cursor-pointer" onClick={() => setMenuOpen(false)}>
               O nas
             </span>
           </Link>
-          <Link href="/services" passHref>
+          <Link href="/uslugi" passHref>
             <span className="hover:text-white cursor-pointer" onClick={() => setMenuOpen(false)}>
               Usługi
             </span>
           </Link>
-          <Link href="/contact" passHref>
+          <Link href="/kontakt" passHref>
             <span className="hover:text-white cursor-pointer" onClick={() => setMenuOpen(false)}>
               Kontakt
             </span>
@@ -136,7 +136,7 @@ export const Header = () => {
             </a>
           </div>
           {/* Call-to-Action Button */}
-          <Link href="/services" passHref>
+          <Link href="/uslugi" passHref>
             <span
               className="bg-black text-white px-4 py-2 rounded-lg font-mono shadow-md transition-all duration-300 hover:bg-gray-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
               onClick={() => setMenuOpen(false)}
