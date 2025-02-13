@@ -1,46 +1,31 @@
 'use client';
+
 import { useEffect } from 'react';
-
-// Define the interface for Landbot
-interface Landbot {
-  Livechat: new (config: { configUrl: string }) => {
-    start: () => void;
-  };
-}
-
-// Declare Landbot on the window object
-declare global {
-  interface Window {
-    Landbot: Landbot;
-  }
-}
 
 export default function Chatbot() {
   useEffect(() => {
-    const initLandbot = () => {
-      let myLandbot;
-      if (!myLandbot) {
-        const script = document.createElement('script');
-        script.type = "module";
-        script.async = true;
-        script.addEventListener('load', function () {
-          myLandbot = new window.Landbot.Livechat({
-            configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2780530-A8YNLNFGPY9Z15MP/index.json',
-          });
-        });
-        script.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
-        document.body.appendChild(script);
-      }
+    const initZapierChatbot = () => {
+      const script = document.createElement('script');
+      script.type = 'module';
+      script.src = 'https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js';
+      script.async = true;
+      script.onload = () => {
+        const chatbotEmbed = document.createElement('zapier-interfaces-chatbot-embed');
+        chatbotEmbed.setAttribute('is-popup', 'true');
+        chatbotEmbed.setAttribute('chatbot-id', 'cm73dngzl000cqe8k002rdh9c'); // Replace with your Zapier chatbot ID
+        document.body.appendChild(chatbotEmbed);
+      };
+      document.body.appendChild(script);
     };
 
-    window.addEventListener('mouseover', initLandbot, { once: true });
-    window.addEventListener('touchstart', initLandbot, { once: true });
+    window.addEventListener('mouseover', initZapierChatbot, { once: true });
+    window.addEventListener('touchstart', initZapierChatbot, { once: true });
 
     return () => {
-      window.removeEventListener('mouseover', initLandbot);
-      window.removeEventListener('touchstart', initLandbot);
+      window.removeEventListener('mouseover', initZapierChatbot);
+      window.removeEventListener('touchstart', initZapierChatbot);
     };
   }, []);
 
-  return null; // This component does not render anything to the UI
+  return null;
 }
