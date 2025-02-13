@@ -14,7 +14,7 @@ export const Hero = () => {
             </p>
             <div className="mt-8 flex gap-1 items-center">
               <a
-                href="/services"
+                href="/uslugi"
                 className="text-xs md:text-sm xl:text-base 2xl:text-lg bg-yellow-400 text-black p-2 rounded-lg font-mono shadow-lg transition-all duration-300 hover:bg-yellow-500 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-yellow-300"
               >
                 Dowiedz się więcej
