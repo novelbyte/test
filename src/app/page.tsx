@@ -7,12 +7,12 @@ import Chatbot from "./sections/Chatbot";
 
 export default function Home() {
   return (
-    <>
+    <> 
+      <Chatbot />
       <Hero />
       <Company />
       <OurProcess />
       <WhyAI />
-      <Chatbot />
     </>
   );
 }
