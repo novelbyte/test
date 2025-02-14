@@ -41,6 +41,9 @@ export const Header = () => {
           </Link>
           {/* Desktop Menu */}
           <nav className="hidden md:flex gap-6 items-center text-xs xl:text-lg 2xl:text-lg">
+            <Link href='blog' passHref>
+            <span className="hover:text-white text-white/80 cursor-pointer">Blog</span>
+            </Link>
             <Link href="/ofirmie" passHref>
               <span className="hover:text-white text-white/80 cursor-pointer">O nas</span>
             </Link>
@@ -50,6 +53,7 @@ export const Header = () => {
             <Link href="/kontakt" passHref>
               <span className="hover:text-white text-white/80 cursor-pointer">Kontakt</span>
             </Link>
+
             {/* Social Media Links */}
             <a
               href="https://x.com/novelbyteAI"
@@ -101,6 +105,11 @@ export const Header = () => {
           </button>
         </div>
         <nav className="flex flex-col gap-6 items-center text-lg text-white/80">
+          <Link href="/blog" passHref>
+            <span className="hover:text-white cursor-pointer" onClick={() => setMenuOpen(false)}>
+              Blog
+            </span>
+          </Link>
           <Link href="/ofirmie" passHref>
             <span className="hover:text-white cursor-pointer" onClick={() => setMenuOpen(false)}>
               O nas
