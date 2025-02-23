@@ -8,7 +8,7 @@ export default function AboutUs() {
           Tworzymy chatboty, które sprzedają, pomagają i budują relacje
         </h2>
         <p className="mt-6 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
-          W NovelByte AI wierzymy, że chatbot to coś więcej niż narzędzie do automatyzacji – to sposób na stworzenie prawdziwej, ludzkiej relacji między Twoją marką a klientami.
+          W <span className="text-white font-bold">NOVELBYTE AI</span>  wierzymy, że chatbot to coś więcej niż narzędzie do automatyzacji – to sposób na stworzenie prawdziwej, ludzkiej relacji między Twoją marką a klientami.
         </p>
         <p className="mt-4 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
           Nasze inteligentne chatboty oferują personalizowane doświadczenie, które buduje zaufanie, lojalność i zamienia odwiedzających w ambasadorów Twojej marki.
@@ -72,7 +72,7 @@ export default function AboutUs() {
           Nasza Misja
         </h1>
         <p className="mt-6 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
-          W NovelByte AI wierzymy, że sztuczna inteligencja ma moc zmieniania biznesów na lepsze. Naszą misją jest tworzenie chatbotów, które nie tylko automatyzują procesy, ale także budują autentyczne relacje z klientami. Każdy nasz projekt jest tworzony z myślą o rozwoju Twojej firmy, oszczędności czasu i dostosowaniu do Twoich unikalnych potrzeb.
+          W <span className="text-white font-bold">NOVELBYTE AI</span> wierzymy, że sztuczna inteligencja ma moc zmieniania biznesów na lepsze. Naszą misją jest tworzenie chatbotów, które nie tylko automatyzują procesy, ale także budują autentyczne relacje z klientami. Każdy nasz projekt jest tworzony z myślą o rozwoju Twojej firmy, oszczędności czasu i dostosowaniu do Twoich unikalnych potrzeb.
         </p>
         <p className="mt-4 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight">
           Nasza misja to sprawienie, by chatboty stały się naturalną częścią każdego biznesu. Automatyzujemy zadania, pomagamy sprzedawać i wspieramy klientów, dostosowując każdą rozmowę do specyfiki danej firmy i jej wartości. Dodatkowo nasze rozwiązania pozwalają zredukować liczbę zapytań do obsługi klienta nawet o <span className="text-yellow-400 font-bold">90%</span>, co przyspiesza cały proces i zwiększa efektywność.

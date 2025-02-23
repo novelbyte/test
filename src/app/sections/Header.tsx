@@ -36,7 +36,7 @@ export const Header = () => {
           {/* Logo */}
           <Link href="/" passHref>
             <span className="text-white/70 text-xl xl:text-2xl font-bold pl-4 transform hover:text-white transition duration-150 cursor-pointer">
-              NOVELBYTE AI
+              NOVELBYTE
             </span>
           </Link>
           {/* Desktop Menu */}

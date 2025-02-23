@@ -23,8 +23,8 @@ export const Hero = () => {
               viewport={{ once: true }}
               className="mt-6 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight"
             >
-              Zwiększ zaangażowanie klientów, usprawnij komunikację i automatyzuj procesy dzięki naszym zaawansowanym chatbotom AI. 
-              NOVELBYTE AI dostarcza innowacyjne rozwiązania, które pomagają firmom działać szybciej i skuteczniej.
+              Zwiększ zaangażowanie klientów, usprawnij komunikację i automatyzuj procesy dzięki naszym zaawansowanym agentom.
+              <span className="text-white font-bold"> NOVELBYTE AI</span> dostarcza innowacyjne rozwiązania, które pomagają firmom działać szybciej i skuteczniej.
             </motion.p>
             <motion.div 
               initial={{ opacity: 0, y: 20 }} 

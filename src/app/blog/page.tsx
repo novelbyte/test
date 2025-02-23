@@ -44,7 +44,7 @@ export default function Blog() {
           <h2 className="text-3xl font-bold mb-4 xl:text-4xl 2xl:text-5xl text-white">
             AI wkracza do świata HR: rewolucja w rekrutacji i zarządzaniu talentami
           </h2>
-          <p className="text-gray-400 mb-8">Autor: Kacper | 10.02.2025</p>
+          <p className="text-gray-400 mb-8">Autor: Kacper | 10.01.2025</p>
           <div className="text-left bg-[#1e293b] p-6 rounded-2xl shadow-lg text-gray-300 space-y-6">
             <p className="mb-4">Sztuczna inteligencja (AI) to technologia, która zmienia sposób, w jaki żyjemy i pracujemy. Coraz częściej spotykamy ją w różnych dziedzinach, a jedną z nich jest dział HR. AI rewolucjonizuje procesy rekrutacji i zarządzania talentami, przynosząc korzyści zarówno firmom, jak i kandydatom.</p>
 
