@@ -1,4 +1,5 @@
-'use client';
+"use client";
+import { motion } from "framer-motion";
 
 export default function Services() {
   const services = [
@@ -37,18 +38,31 @@ export default function Services() {
   return (
     <section className="flex justify-center p-8 bg-[#0f172a]">
       <div className="max-w-5xl text-center mt-24">
-        <h2 className="text-3xl font-bold mb-16 xl:text-4xl 2xl:text-5xl text-white">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-3xl font-bold mb-16 xl:text-4xl 2xl:text-5xl text-white"
+        >
           Nasze Usługi
-        </h2>
+        </motion.h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 justify-items-center">
           {services.map((service, index) => (
-            <div key={index} className="group relative p-6 bg-[#1e293b] rounded-2xl shadow-lg transition-all duration-300 hover:bg-[#334155] hover:scale-105">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="group relative p-6 bg-[#1e293b] rounded-2xl shadow-lg transition-all duration-300 hover:bg-[#334155] hover:scale-105"
+            >
               <div className="text-5xl mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold text-white">{service.title}</h3>
               <p className="text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-2">
                 {service.description}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
