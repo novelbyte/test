@@ -10,7 +10,7 @@ const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "NOVELBYTE AI",
-  description: "NOVELBYTE AI",
+  description: "NOVELBYTE AI AUTOMATYZACJA CHATBOTY",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="relative">
+    <html lang="pl" className="relative">
       <head>
         {/* Favicon link */}
         <link rel="icon" href="/favicon-32x32.ico" type="image/x-icon" />
