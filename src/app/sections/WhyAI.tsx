@@ -13,7 +13,7 @@ export default function WhyChatbots() {
       >
         Dlaczego Chatboty AI?
       </motion.h2>
-      <div className="mt-10 space-y-8 px-6">
+      <div className="mt-10 space-y-8 px-6 2xl:px-[240px] xl:px-[160px]">
         {[
           { title: "Dostępność 24/7", desc: "Chatboty obsługują klientów całą dobę.", icon: "⏰" },
           { title: "Natychmiastowa Odpowiedź", desc: "Odpowiadają w ułamku sekundy.", icon: "⚡" },
@@ -34,7 +34,7 @@ export default function WhyChatbots() {
           </motion.div>
         ))}
       </div>
-      <div className="max-w-[908px] pl-8 xl:pl-[100px] 2xl:pl-[210px] mt-[200px] mb-12">
+      <div className="max-w-[908px] pl-8 xl:pl-[160px] 2xl:pl-[240px] mt-[200px] mb-12">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

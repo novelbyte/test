@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <section className="pt-8 pl-8 xl:pl-[140px] 2xl:pl-[240px] pb-20 bg-[#0f172a] overflow-x-clip">
+    <section className="pt-8 pl-8 xl:pl-[160px] 2xl:pl-[240px] pb-20 bg-[#0f172a] overflow-x-clip">
       <div className="container max-w-[1280px]">
         <div className="md:flex items-center">
           <motion.div 
