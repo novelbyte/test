@@ -26,7 +26,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon-32x32.png" type="image/png" />
 
         {/* Open Graph meta tags */}
-        <meta property="og:image" content="/path/to/your/logo.png" />
+        <meta property="og:image" content="/favicon-32x32.png" />
         <meta property="og:title" content="NOVELBYTE AI" />
         <meta property="og:description" content="NOVELBYTE AI AUTOMATYZACJA CHATBOTY" />
         <meta property="og:url" content="https://www.novelbyte.pl" />
