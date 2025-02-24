@@ -23,8 +23,15 @@ export default function RootLayout({
       <head>
         {/* Favicon link */}
         <link rel="icon" href="/favicon-32x32.ico" type="image/x-icon" />
-        {/* Add other links if you use different image formats */}
         <link rel="icon" href="/favicon-32x32.png" type="image/png" />
+
+        {/* Open Graph meta tags */}
+        <meta property="og:image" content="/path/to/your/logo.png" />
+        <meta property="og:title" content="NOVELBYTE AI" />
+        <meta property="og:description" content="NOVELBYTE AI AUTOMATYZACJA CHATBOTY" />
+        <meta property="og:url" content="https://www.novelbyte.pl" />
+        
+
       </head>
       <body className={`${dmSans.className} antialiased bg-[#0f172a]`}>
         <div>
