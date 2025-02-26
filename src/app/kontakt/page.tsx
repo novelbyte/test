@@ -10,31 +10,23 @@ export default function ContactPage() {
 
   const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 
- const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-  event.preventDefault();
-  setResult("Wysyłanie...");
-
-  const form = event.currentTarget; // Przechowujemy referencję do formularza
-  const formData = new FormData(form);
-  formData.append("access_key", apiKey as string);
-
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setLoading(true); // Włącz loading
     setResult("Wysyłanie...");
-  
+
     const form = event.currentTarget;
     const formData = new FormData(form);
     formData.append("access_key", apiKey as string);
-  
+
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: formData,
       });
-  
+
       const data = await response.json();
-  
+
       if (data.success) {
         setResult("Formularz wysłany pomyślnie");
         form.reset();
@@ -49,7 +41,6 @@ export default function ContactPage() {
       setLoading(false); // Wyłącz loading
     }
   };
-  
 
   return (
     <section className="bg-[#0f172a] py-20">
@@ -152,5 +143,4 @@ export default function ContactPage() {
       </div>
     </section>
   );
-}
 }
