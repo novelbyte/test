@@ -18,31 +18,38 @@ export default function ContactPage() {
   const formData = new FormData(form);
   formData.append("access_key", apiKey as string);
 
-  try {
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Formularz wysłany pomyślnie");
-
-      // Sprawdzamy, czy 'form' nie jest null przed resetem
-      if (form) {
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setLoading(true); // Włącz loading
+    setResult("Wysyłanie...");
+  
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    formData.append("access_key", apiKey as string);
+  
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+  
+      const data = await response.json();
+  
+      if (data.success) {
+        setResult("Formularz wysłany pomyślnie");
         form.reset();
+      } else {
+        console.error("Błąd", data);
+        setResult(data.message);
       }
-    } else {
-      console.error("Błąd", data);
-      setResult(data.message);
+    } catch (error) {
+      console.error("Wystąpił błąd:", error);
+      setResult("Wystąpił błąd podczas wysyłania formularza.");
+    } finally {
+      setLoading(false); // Wyłącz loading
     }
-  } catch (error) {
-    console.error("Wystąpił błąd:", error);
-    setResult("Wystąpił błąd podczas wysyłania formularza.");
-  }
-};
-
+  };
+  
 
   return (
     <section className="bg-[#0f172a] py-20">
