@@ -64,7 +64,7 @@ export const Header = () => {
               <FaTwitter />
             </a>
             <a
-              href="https://www.instagram.com/novelbyte.ai/"
+              href="https://www.instagram.com/novelbyte/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl hover:text-white transition text-white/80"
