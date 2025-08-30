@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const Company = () => {
   return (
-    <section className="pt-10 pb-24 pl-[260px] bg-[#0f172a] overflow-x-clip">
+    <section className="pt-10 pb-24 bg-[#0f172a] overflow-x-clip 2xl:pl-[260px]">
       <div className="container mx-auto px-6 lg:px-12">
         <motion.div 
           initial={{ opacity: 0, x: -50 }} 
