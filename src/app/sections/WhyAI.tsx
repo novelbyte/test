@@ -1,67 +1,44 @@
 "use client";
 import { motion } from "framer-motion";
+import { Users, Rocket, Clock, Workflow, BarChart3, TrendingUp } from "lucide-react";
 
-export default function WhyChatbots() {
+export default function Benefits() {
+  const benefits = [
+    { icon: Workflow, title: "Automatyzacja procesów", text: "Od faktur i raportów po obsługę zapytań – system działa samodzielnie, oszczędzając Twój czas." },
+    { icon: Users, title: "Lepsza obsługa klientów", text: "Inteligentne chatboty i asystenci wspierają klientów 24/7 na wielu kanałach." },
+    { icon: Clock, title: "Oszczędność godzin pracy", text: "Codzienne, powtarzalne zadania wykonują boty, dzięki czemu zespół może skupić się na rozwoju firmy." },
+    { icon: Rocket, title: "Szybsza sprzedaż", text: "Automatyczne leady, follow-upy i personalizacja komunikacji zwiększają skuteczność handlową." },
+    { icon: BarChart3, title: "Pełna kontrola danych", text: "Raporty i analityka w czasie rzeczywistym wspierają mądre decyzje biznesowe." },
+    { icon: TrendingUp, title: "Skalowalny rozwój", text: "System obsłuży 10 czy 1000 klientów bez dodatkowych kosztów i zatrudnień." },
+  ];
+
   return (
-    <section className="pt-16 pb-44 bg-[#0f172a] text-white">
+    <section className="py-24 bg-[#0f172a]">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-center text-3xl font-bold pb-12"
+        className="text-center text-3xl md:text-4xl font-bold text-white"
       >
-        Dlaczego Chatboty AI?
+        Korzyści dla Twojej firmy
       </motion.h2>
-      <div className="mt-10 space-y-8 px-6 2xl:px-[240px] xl:px-[160px]">
-        {[
-          { title: "Dostępność 24/7", desc: "Chatboty obsługują klientów całą dobę.", icon: "⏰" },
-          { title: "Natychmiastowa Odpowiedź", desc: "Odpowiadają w ułamku sekundy.", icon: "⚡" },
-          { title: "Redukcja Kosztów", desc: "Automatyzują obsługę, zmniejszając koszty.", icon: "💰" },
-          { title: "Skalowalność", desc: "Obsługują wielu klientów naraz.", icon: "📈" },
-        ].map((item, index) => (
+
+      <div className="mt-16 grid gap-10 md:grid-cols-2 xl:grid-cols-3 max-w-6xl mx-auto px-6">
+        {benefits.map((b, i) => (
           <motion.div
-            key={index}
+            key={i}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: index * 0.2 }}
+            transition={{ duration: 0.5, delay: i * 0.1 }}
             viewport={{ once: true }}
-            className="p-6 bg-[#1e293b] rounded-2xl text-center shadow-md"
+            className="rounded-2xl bg-white/5 p-8 hover:bg-white/10 transition"
           >
-            <span className="text-4xl">{item.icon}</span>
-            <h3 className="text-2xl font-semibold mt-3">{item.title}</h3>
-            <p className="mt-2 text-gray-300">{item.desc}</p>
+            <b.icon className="w-10 h-10 text-yellow-400 mb-4" />
+            <h3 className="text-xl font-semibold text-white mb-2">{b.title}</h3>
+            <p className="text-white/70 text-sm">{b.text}</p>
           </motion.div>
         ))}
-      </div>
-      <div className="max-w-[908px] pl-8 xl:pl-[160px] 2xl:pl-[240px] mt-[200px] mb-12">
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="mt-6 text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold tracking-tighter text-white"
-        >
-          Dlaczego Chatboty Są Przyszłością?
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="mt-6 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight"
-        >
-          Chatboty to nie tylko przyszłość – to rewolucja w komunikacji z klientami. Wykorzystując sztuczną inteligencję, możemy zapewnić natychmiastową, personalizowaną obsługę, która nie tylko oszczędza czas, ale także buduje głębokie więzi z użytkownikami. Działają 24/7, nigdy się nie męczą, a ich zdolność do rozwiązywania problemów w czasie rzeczywistym sprawia, że stają się niezastąpionym narzędziem w każdej firmie.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="mt-4 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 tracking-tight"
-        >
-          Dzięki naszym chatbotom, które rozwijają się z każdą rozmową, firmy mogą stawić czoła wyzwaniom przyszłości – skutecznej obsłudze klienta, zwiększaniu sprzedaży i automatyzacji procesów. To inwestycja, która zapewnia długoterminowy rozwój i przewagę konkurencyjną.
-        </motion.p>
       </div>
     </section>
   );

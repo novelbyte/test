@@ -30,6 +30,7 @@ export const Header = () => {
           Innowacyjne rozwiązania AI i chatboty dla rozwijających się firm
         </p>
       </div>
+
       {/* Main Navigation */}
       <div className="py-5">
         <div className="container max-w-screen-xl mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -39,10 +40,11 @@ export const Header = () => {
               NOVELBYTE
             </span>
           </Link>
+
           {/* Desktop Menu */}
           <nav className="hidden md:flex gap-6 items-center text-xs xl:text-lg 2xl:text-lg">
-            <Link href='blog' passHref>
-            <span className="hover:text-white text-white/80 cursor-pointer">Blog</span>
+            <Link href="/blog" passHref>
+              <span className="hover:text-white text-white/80 cursor-pointer">Blog</span>
             </Link>
             <Link href="/ofirmie" passHref>
               <span className="hover:text-white text-white/80 cursor-pointer">O nas</span>
@@ -71,6 +73,7 @@ export const Header = () => {
             >
               <FaInstagram />
             </a>
+
             {/* Call-to-Action Button */}
             <Link href="/uslugi" passHref>
               <span className="text-xs xl:text-lg 2xl:text-lg bg-black text-white p-2 rounded-lg font-mono shadow-lg transition-all duration-300 hover:bg-gray-700 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer">
@@ -78,6 +81,7 @@ export const Header = () => {
               </span>
             </Link>
           </nav>
+
           {/* Mobile Menu Button */}
           <button
             className="md:hidden text-2xl text-white p-2 focus:outline-none"
@@ -89,6 +93,7 @@ export const Header = () => {
           </button>
         </div>
       </div>
+
       {/* Mobile Menu Dropdown - Covers Full Screen */}
       <div
         className={`fixed inset-0 bg-[#454b58] h-[420px] z-30 transition-transform duration-300 ease-in-out ${
@@ -104,6 +109,7 @@ export const Header = () => {
             <FaTimes />
           </button>
         </div>
+
         <nav className="flex flex-col gap-6 items-center text-lg text-white/80">
           <Link href="/blog" passHref>
             <span className="hover:text-white cursor-pointer" onClick={() => setMenuOpen(false)}>
@@ -125,6 +131,7 @@ export const Header = () => {
               Kontakt
             </span>
           </Link>
+
           {/* Social Media Links */}
           <div className="flex gap-6">
             <a
@@ -144,6 +151,7 @@ export const Header = () => {
               <FaInstagram />
             </a>
           </div>
+
           {/* Call-to-Action Button */}
           <Link href="/uslugi" passHref>
             <span
