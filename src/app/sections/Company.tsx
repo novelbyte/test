@@ -23,7 +23,7 @@ export const Company = () => {
             viewport={{ once: true }}
             className="mt-8 text-sm md:text-lg xl:text-lg 2xl:text-xl text-gray-300 leading-relaxed"
           >
-            W <span className="text-white font-semibold">NOVELBYTE AI</span> 
+            W <span className="text-white font-semibold">NOVELBYTE AI </span> 
             automatyzujemy procesy w firmach – od obsługi klienta, po sprzedaż, marketing i operacje wewnętrzne. 
             Nasze inteligentne rozwiązania eliminują powtarzalne zadania, zwiększają efektywność 
             i pozwalają Twojemu biznesowi działać w tle 24/7.

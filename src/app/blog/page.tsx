@@ -28,7 +28,6 @@ async function getPosts(): Promise<Post[]> {
   });
 }
 
-// Komponent musi być async jeśli fetchujesz dane
 export default async function Page(): Promise<ReactNode> {
   const allPosts = await getPosts();
   const posts = allPosts.filter(post => post.frontmatter);
