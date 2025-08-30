@@ -13,7 +13,7 @@ type Post = {
 };
 
 async function getPosts(): Promise<Post[]> {
-  const postsDirectory = path.join(process.cwd(), 'posts');
+  const postsDirectory = path.join(process.cwd(), 'content');
   const files = fs.readdirSync(postsDirectory);
 
   return files.map((file) => {
