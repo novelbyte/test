@@ -3,28 +3,7 @@
 import { motion } from "framer-motion";
 
 export const AboutUs = () => {
-  const values = [
-    {
-      id: "01",
-      title: "Innowacja i Kreatywność",
-      desc: "Dostarczamy unikalne, nowoczesne rozwiązania, które wyróżniają się na rynku. Innowacyjność pozwala naszym klientom wyprzedzać konkurencję."
-    },
-    {
-      id: "02",
-      title: "Podejście Skoncentrowane na Kliencie",
-      desc: "Dostosowujemy strategie do unikalnych celów klientów. Ich sukces buduje długoterminowe relacje i rozwój."
-    },
-    {
-      id: "03",
-      title: "Doskonałość w Realizacji",
-      desc: "Precyzja i jakość w każdym projekcie. Perfekcyjne wykonanie buduje wiarygodność i dostarcza mierzalne rezultaty."
-    },
-    {
-      id: "04",
-      title: "Przejrzystość i Zaufanie",
-      desc: "Otwartość i uczciwość budują trwałe, silne relacje. Zaufanie to fundament udanej współpracy."
-    }
-  ];
+
 
   return (
     <section className="pt-8 pl-8 pb-20 bg-[#0f172a] overflow-x-clip">
